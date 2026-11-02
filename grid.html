@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {background:#eef2ff;display:grid;}
+  nav   {background:hwb(240 6% 63%);color:white;padding:20px;border-radius:15px;}
+  aside {background:#8181814f;padding:10px;border-radius:15px;}
+  main  {background:#eef2ff;padding:15px;display:flex;gap:10px;}
+    .card {width:110px;margin-top:15px;background:white;height:50px;border-radius:15px;display:flex;padding:5px;gap:20px}
+  .icons {display:flex;flex-direction:row;flex-wrap:wrap;gap:10px;}
+    footer {background:hwb(240 6% 63%);padding:20px;text-align:center;color:white;border-radius:15px}
+   
+    @media  (max-width: 700px){
+    .icons{line-height:1;width:120px;}
+      .card {height:40px;margin-top:1px;font-size:15px;}
+     aside { width: 160px;}
+      aside ul{list-style: none;line-height:50px;font-size:20px;}}
+      </style>
+</head>
+  <body>
+    <nav>
+      <h1> Dashboard </h1>
+      </nav>
+   <main>
+    <aside>
+      <h2> Menu </h2>
+      <ul> <li> Home </li>
+        <li> Report </li>
+        <li> Setting </li>
+        </aside><div class="icons">
+     <div class="card"><span> &#128100; </span><div><b>120 </b><br>users</div></div>
+    <div class="card"><span> &#128176</span><div><b>Rs 45k</b><br> Sales</div></div>
+      <div class="card"><span>&#128230</span><div><b>38</b><br>Orders</div></div>
+    <div class="card"><span>&#11088;</span><div><b>4.8</b><br> Rating</div></div>
+     <div class="card"><span>&#128272;</span><div><b>18</b><br>Messages</div></div>
+    <div class="card"><span> &#9989; </span><div><b>92%</b><br>Done</div></div>
+        </div>
+   </main>
+     <footer>
+    <p> Made with CSS Grid </p>
+    </footer>
+    </body>
+</html>
