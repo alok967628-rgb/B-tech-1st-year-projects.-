@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+nav {background: linear-gradient(to right,#4ccded ,  #0084c7 , #2bd8a988);color:white;padding:1px;font-size:25px;text-align: center;}
+main { margin-top:5px;}
+.nav {margin:0;background:hwb(0 50% 50% / 0.1568627450980392);padding:3px}
+  .nav button{border:hwb(0 50% 50% / 0.49411764705882355) 1px solid;padding:10px; width:110px;border-radius:15px;text-align:center;font-size:15px;}
+ .nav a {text-decoration: none;color:hwb(0 74% 26%)}
+footer {margin-top:10px;padding:20px;background:hwb(0 53% 47% / 0.07450980392156863);height:200px;display:flex;justify-content:center;font-size:45px;color:skyblue;}
+.slide { height:220px;background:hwb(0 100% 0%);padding:5px;display:flex;flex-direction:row; overflow-x: auto;}
+.card {background:hwb(0 100% 0%);height:170px;min-width:190px;margin:2px;display:flex;top:10px;justify-content:center;padding:15px;border-radius:15px;flex-direction:column;align-items: center;border:lab(0% 0 0 / 0.08235294117647059) 1px solid;}
+.card img {border-radius:2px;box-shadow: 0 0 5px;height: 130px;width:180px;}
+footer p {display:none;}
+  .nav button:hover {background:white;}
+
+  @media (max-height: 748px){
+
+.slide {display:flex;flex-wrap:wrap;margin-top:2px}
+  .card {Width:100%;}
+.card img{width:210px;height:150px;}
+footer p {display:inline;}}
+</style>
+</head>
+<body>
+ <nav>
+   
+   <p> <b> International Cric Club </b> </p>
+   </nav>
+     <main>
+       <img src="icc.jpg" width="100%">
+       <div class="nav">
+       <button><a href="matches.html"> Matches</a> </button>
+        <button><a href="teams.html"> Teams </a></button>
+      <button><a href="events.html"> Events </a></button>
+       </div>
+     
+       <div class="slide">
+          
+         <div class="card"><img src="ev.jpg" width="200px" height="130px"> <a href="all.html"> All world cups</a></div>
+        
+         <div class="card"><img src="chikuu.jpg"><a href="vk.html"><b> MEN IN BLUES </b></a> </div>
+     
+         <div class="card"> <img src="pocket.jpg"><a href="pd.html"><b> POCKET DYNAMITE</b></a></div>
+     
+         <div class="card"> <img src="pandu.jpg"><a href="hp.html"><b>Hp is ruled out</b></a></div>
+      
+         <div class="card"> <img src="prin.jpg"><a href="shub.html"><b>MAN OF CLASS </b> </a> </div>
+        
+       </div>
+     
+       <footer>
+         <p> <b><u> MEN IN BLUES </b></u> </p>
+       </footer>
+</body>
+</html>
