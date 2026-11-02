@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+.outer {background: black;width:100%;height:450px;border-radius:15px;display:flex;flex-direction: column;}
+ .ball { height:10px;width:10px;background:red;border-radius:50%;margin-left:50px} 
+.plat {height:10px;width:80px; border:orange solid 1px;border-radius:10px;background:orange;margin-top:430px;}
+.plat {animation-name:Slip;animation-duration:6s;position:absolute;animation-timing-function:linear;}
+.ball {animation-name:drop;animation-duration:3s;position:relative;animation-timing-function:linear;} 
+@keyframes drop{
+ 0%{top:0;left:0;}
+  25%{background:blue;top:410px;left:35%;}
+  50% {background: yellow; top:0;left:80%;}
+ 75%{background:pink;top:410px; left:30%;}
+  100%{top:0;left:0;}}
+  
+  @keyframes Slip{
+    0% {left:5%;top:0px;}
+    25% {left:59% ; top:0px;}
+  50% {left:20% ; top:0px;}
+}
+</style>
+
+</head>
+
+  <body>
+  <div class="outer">
+    <div class="ball"> </div>
+    <div class="plat"> </div>
+
+    </div>
+</body>
+</html>
